@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DetailViewController.swift
 //  TodayAppUIKit
 //
 //  Created by Thomas Cowern on 8/22/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UISplitViewController {
+class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

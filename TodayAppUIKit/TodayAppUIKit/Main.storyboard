@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Journal Detail View Controller-->
         <scene sceneID="8S9-DE-xC2">
             <objects>
-                <viewController id="mz7-pn-8kZ" sceneMemberID="viewController">
+                <viewController id="mz7-pn-8kZ" customClass="JournalDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XOU-ZL-oGe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,7 +28,7 @@
         <!--Item-->
         <scene sceneID="Qk1-ho-QL5">
             <objects>
-                <collectionViewController id="8li-dX-bYl" sceneMemberID="viewController">
+                <collectionViewController id="8li-dX-bYl" customClass="PhotoCollectionViewController" customModule="TodayAppUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="kT3-sb-0Rq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,7 +98,7 @@
         <!--Item-->
         <scene sceneID="UrE-6i-oxj">
             <objects>
-                <tableViewController id="Wfl-pQ-MGm" sceneMemberID="viewController">
+                <tableViewController id="Wfl-pQ-MGm" customClass="JournalTableViewController" customModule="TodayAppUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="988-eb-NxT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,11 +124,11 @@
             </objects>
             <point key="canvasLocation" x="175" y="-612"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Journal View Controller-->
         <scene sceneID="1dR-Jv-rmj">
             <objects>
-                <viewController id="onb-vj-tev" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BK1-4R-I8Q">
+                <viewController id="onb-vj-tev" customClass="CreateJournalViewController" customModule="TodayAppUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BK1-4R-I8Q" customClass="Create">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="z1p-2c-Ngr"/>

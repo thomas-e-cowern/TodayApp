@@ -12,7 +12,10 @@
 		4D0CEAC328B3CD5000CE2C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0CEAC228B3CD5000CE2C3C /* Assets.xcassets */; };
 		4D0CEAC628B3CD5000CE2C3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0CEAC428B3CD5000CE2C3C /* LaunchScreen.storyboard */; };
 		4D0CEACE28B3D09700CE2C3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0CEACD28B3D09700CE2C3C /* Main.storyboard */; };
-		4D0CEAD028B3D28700CE2C3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0CEACF28B3D28700CE2C3C /* ViewController.swift */; };
+		4D0CEAD628B3F76B00CE2C3C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0CEAD528B3F76B00CE2C3C /* DetailViewController.swift */; };
+		4D0CEAD828B3F78F00CE2C3C /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0CEAD728B3F78F00CE2C3C /* JournalTableViewController.swift */; };
+		4D0CEADA28B3F7A800CE2C3C /* CreateJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0CEAD928B3F7A800CE2C3C /* CreateJournalViewController.swift */; };
+		4D0CEADC28B3F7C000CE2C3C /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0CEADB28B3F7C000CE2C3C /* PhotoCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +26,10 @@
 		4D0CEAC528B3CD5000CE2C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D0CEAC728B3CD5000CE2C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D0CEACD28B3D09700CE2C3C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		4D0CEACF28B3D28700CE2C3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D0CEAD528B3F76B00CE2C3C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4D0CEAD728B3F78F00CE2C3C /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
+		4D0CEAD928B3F7A800CE2C3C /* CreateJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateJournalViewController.swift; sourceTree = "<group>"; };
+		4D0CEADB28B3F7C000CE2C3C /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +66,12 @@
 				4D0CEABB28B3CD4800CE2C3C /* SceneDelegate.swift */,
 				4D0CEAC228B3CD5000CE2C3C /* Assets.xcassets */,
 				4D0CEACD28B3D09700CE2C3C /* Main.storyboard */,
+				4D0CEAD528B3F76B00CE2C3C /* DetailViewController.swift */,
+				4D0CEAD728B3F78F00CE2C3C /* JournalTableViewController.swift */,
+				4D0CEAD928B3F7A800CE2C3C /* CreateJournalViewController.swift */,
+				4D0CEADB28B3F7C000CE2C3C /* PhotoCollectionViewController.swift */,
 				4D0CEAC428B3CD5000CE2C3C /* LaunchScreen.storyboard */,
 				4D0CEAC728B3CD5000CE2C3C /* Info.plist */,
-				4D0CEACF28B3D28700CE2C3C /* ViewController.swift */,
 			);
 			path = TodayAppUIKit;
 			sourceTree = "<group>";
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D0CEAD028B3D28700CE2C3C /* ViewController.swift in Sources */,
+				4D0CEAD628B3F76B00CE2C3C /* DetailViewController.swift in Sources */,
+				4D0CEADC28B3F7C000CE2C3C /* PhotoCollectionViewController.swift in Sources */,
 				4D0CEABA28B3CD4800CE2C3C /* AppDelegate.swift in Sources */,
+				4D0CEAD828B3F78F00CE2C3C /* JournalTableViewController.swift in Sources */,
 				4D0CEABC28B3CD4800CE2C3C /* SceneDelegate.swift in Sources */,
+				4D0CEADA28B3F7A800CE2C3C /* CreateJournalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
