@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class JournalDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
