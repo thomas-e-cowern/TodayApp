@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Journal Detail View Controller-->
         <scene sceneID="3oT-iH-W7E">
             <objects>
-                <viewController id="v39-a7-vZv" sceneMemberID="viewController">
+                <viewController id="v39-a7-vZv" customClass="JournalDetailViewController" customModule="TodayAppUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1uz-Lj-Kgv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,7 +28,7 @@
         <!--Item-->
         <scene sceneID="xvO-vE-SuY">
             <objects>
-                <collectionViewController id="g7g-Fd-jg7" sceneMemberID="viewController">
+                <collectionViewController id="g7g-Fd-jg7" customClass="PhotoCollectionViewController" customModule="TodayAppUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="oOu-d4-e7H">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,7 +82,7 @@
         <!--Root View Controller-->
         <scene sceneID="lVB-cz-HrG">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="2i6-9B-Qgd" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="2i6-9B-Qgd" customClass="JournalTableViewController" customModule="TodayAppUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Mcc-C2-Y8Y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,10 +109,10 @@
             </objects>
             <point key="canvasLocation" x="1348" y="-686"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Journal View Controller-->
         <scene sceneID="dPv-xX-zLi">
             <objects>
-                <viewController id="bkb-DU-vgE" sceneMemberID="viewController">
+                <viewController id="bkb-DU-vgE" customClass="CreateJournalViewController" customModule="TodayAppUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aWo-Sb-6ah">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
