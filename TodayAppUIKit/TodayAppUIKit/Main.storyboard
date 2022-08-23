@@ -79,7 +79,7 @@
             </objects>
             <point key="canvasLocation" x="525" y="-686"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Item-->
         <scene sceneID="lVB-cz-HrG">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="2i6-9B-Qgd" customClass="JournalTableViewController" customModule="TodayAppUIKit" customModuleProvider="target" sceneMemberID="viewController">
@@ -87,9 +87,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Qzo-M2-UKr">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.29803921568627451" green="0.75686274509803919" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bbd-hc-VU8">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="244.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bbd-hc-VU8" id="i5H-V1-u3c">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -103,11 +108,19 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="b4t-Dx-3Jd"/>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="fag-Ag-Kkf"/>
+                    <navigationItem key="navigationItem" id="fag-Ag-Kkf">
+                        <nil key="title"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="hmY-vl-73n">
+                            <view key="customView" contentMode="scaleToFill" id="Jqu-g4-Y7j">
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hbt-NZ-VVq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1348" y="-686"/>
+            <point key="canvasLocation" x="1346.376811594203" y="-686.38392857142856"/>
         </scene>
         <!--Create Journal View Controller-->
         <scene sceneID="dPv-xX-zLi">
