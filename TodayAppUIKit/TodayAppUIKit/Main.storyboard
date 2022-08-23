@@ -90,7 +90,38 @@
                         <view key="tableHeaderView" contentMode="scaleToFill" id="Qzo-M2-UKr">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="c4f-Jf-kRT">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZb-Wv-JMJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="207" height="200"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="207" id="PX0-Dj-UNT"/>
+                                                <constraint firstAttribute="height" constant="200" id="YSt-gP-7WE"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="camera" catalog="system"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAH-I0-RUc">
+                                            <rect key="frame" x="207" y="0.0" width="207" height="200"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="200" id="62i-oj-Ee3"/>
+                                                <constraint firstAttribute="width" constant="207" id="9rh-fH-H3T"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="plus.app" catalog="system"/>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
                             <color key="backgroundColor" red="0.29803921568627451" green="0.75686274509803919" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="c4f-Jf-kRT" secondAttribute="trailing" id="MKE-x8-z3Y"/>
+                                <constraint firstItem="c4f-Jf-kRT" firstAttribute="top" secondItem="Qzo-M2-UKr" secondAttribute="top" id="hr0-qC-cPz"/>
+                                <constraint firstItem="c4f-Jf-kRT" firstAttribute="leading" secondItem="Qzo-M2-UKr" secondAttribute="leading" id="q4e-xJ-Sfl"/>
+                                <constraint firstAttribute="bottom" secondItem="c4f-Jf-kRT" secondAttribute="bottom" id="uoe-GG-xu3"/>
+                            </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bbd-hc-VU8">
@@ -168,6 +199,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera" catalog="system" width="128" height="94"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
