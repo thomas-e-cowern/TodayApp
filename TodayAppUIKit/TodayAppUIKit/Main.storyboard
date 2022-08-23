@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,21 +25,40 @@
             </objects>
             <point key="canvasLocation" x="-310" y="10"/>
         </scene>
-        <!--Item 2-->
-        <scene sceneID="cQD-f3-Jx7">
+        <!--Item-->
+        <scene sceneID="xvO-vE-SuY">
             <objects>
-                <viewController id="Wv7-VW-kdj" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="buc-ij-dzQ">
+                <collectionViewController id="g7g-Fd-jg7" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="oOu-d4-e7H">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="3VA-09-ZyJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="ZbH-y8-gaK"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hOD-bc-ehV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yDL-nW-22J">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="FKM-Qm-EWd">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0pX-3V-w92">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionViewCellContentView>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="g7g-Fd-jg7" id="JYa-rk-OY0"/>
+                            <outlet property="delegate" destination="g7g-Fd-jg7" id="g86-df-FgO"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Item" id="voW-vo-rKb"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="URg-hp-Blq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="525" y="10"/>
+            <point key="canvasLocation" x="552" y="13"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rFI-Sg-ur9">
@@ -51,8 +71,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Wv7-VW-kdj" kind="relationship" relationship="viewControllers" id="Z8l-Nc-FUp"/>
                         <segue destination="2i6-9B-Qgd" kind="relationship" relationship="viewControllers" id="Mgn-kx-fAb"/>
+                        <segue destination="g7g-Fd-jg7" kind="relationship" relationship="viewControllers" id="Oix-qp-tGS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wY5-0c-0kd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
