@@ -132,6 +132,7 @@
                     <connections>
                         <outlet property="cameraButton" destination="AcK-OT-y2K" id="Pbt-0q-97L"/>
                         <outlet property="plusButton" destination="Nos-uJ-lht" id="SlN-XF-jXv"/>
+                        <segue destination="bkb-DU-vgE" kind="presentation" identifier="goToNew" id="c73-n9-dwp"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3L-b0-VKI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -162,7 +163,7 @@
             <objects>
                 <viewController id="bkb-DU-vgE" customClass="CreateJournalViewController" customModule="TodayAppUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aWo-Sb-6ah">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Klb-2H-5p0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
