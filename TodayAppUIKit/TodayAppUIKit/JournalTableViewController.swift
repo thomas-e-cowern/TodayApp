@@ -11,6 +11,7 @@ class JournalTableViewController: UITableViewController {
 
     @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var plusButton: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,7 @@ class JournalTableViewController: UITableViewController {
         
     }
     
+
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

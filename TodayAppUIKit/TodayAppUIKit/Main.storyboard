@@ -84,6 +84,7 @@
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="  ">
                                                 <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                                                <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </buttonConfiguration>
                                             <connections>
                                                 <action selector="plusTapped:" destination="kyD-23-ous" eventType="touchUpInside" id="U4j-qa-w7v"/>
@@ -97,6 +98,7 @@
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="   " subtitle="  ">
                                                 <imageReference key="image" image="camera" catalog="system" symbolScale="large"/>
+                                                <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </buttonConfiguration>
                                             <connections>
                                                 <action selector="cameraTapped:" destination="kyD-23-ous" eventType="touchUpInside" id="tKZ-S4-Rrr"/>
@@ -170,12 +172,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                 <items>
                                     <navigationItem title="Title" id="x6l-Sf-sn9">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="rFe-jb-l4v"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="nyJ-CN-ugC"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="rFe-jb-l4v">
+                                            <connections>
+                                                <action selector="cancelButtonTapped:" destination="bkb-DU-vgE" id="swl-hW-TdU"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="nyJ-CN-ugC">
+                                            <connections>
+                                                <action selector="saveButtonTapped:" destination="bkb-DU-vgE" id="ayb-uS-Xdp"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Mx-PL-q1h">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Mx-PL-q1h">
                                 <rect key="frame" x="20" y="738" width="374" height="70"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PvA-YT-Acu">
@@ -188,6 +198,10 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="calendar" catalog="system" title="  "/>
+                                                <connections>
+                                                    <action selector="calendarButtonTapped:" destination="bkb-DU-vgE" eventType="touchUpInside" id="Jrc-TW-ORc"/>
+                                                    <action selector="calendarButtonTapped:" destination="FVY-jb-6xJ" eventType="touchUpInside" id="Xye-9R-Wl1"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVy-6w-6iL">
                                                 <rect key="frame" x="80" y="0.0" width="70" height="31"/>
@@ -196,6 +210,10 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="camera.fill" catalog="system" title="   "/>
+                                                <connections>
+                                                    <action selector="cameraButtonTapped:" destination="bkb-DU-vgE" eventType="touchUpInside" id="5Uv-Ix-mT8"/>
+                                                    <action selector="cameraButtonTapped:" destination="FVY-jb-6xJ" eventType="touchUpInside" id="IoV-Ah-lQg"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -205,7 +223,9 @@
                                     <constraint firstItem="NSO-o2-gZV" firstAttribute="trailing" secondItem="PvA-YT-Acu" secondAttribute="trailing" constant="224" id="MYl-nE-bc3"/>
                                     <constraint firstItem="PvA-YT-Acu" firstAttribute="leading" secondItem="NSO-o2-gZV" secondAttribute="leading" id="P47-rr-eIs"/>
                                     <constraint firstItem="PvA-YT-Acu" firstAttribute="top" secondItem="NSO-o2-gZV" secondAttribute="top" constant="20" id="T5l-Ed-ZIg"/>
+                                    <constraint firstAttribute="bottom" secondItem="PvA-YT-Acu" secondAttribute="bottom" constant="19" id="V9H-mS-aWI"/>
                                     <constraint firstItem="NSO-o2-gZV" firstAttribute="bottom" secondItem="PvA-YT-Acu" secondAttribute="bottom" constant="19" id="Wlu-cl-rbF"/>
+                                    <constraint firstAttribute="trailing" secondItem="PvA-YT-Acu" secondAttribute="trailing" constant="224" id="o4u-DO-qdO"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Co2-hJ-s54"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="NSO-o2-gZV"/>
@@ -225,6 +245,10 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Set Date"/>
+                                <connections>
+                                    <action selector="setDateTapped:" destination="bkb-DU-vgE" eventType="touchUpInside" id="3f0-8T-ect"/>
+                                    <action selector="setDateTapped:" destination="FVY-jb-6xJ" eventType="touchUpInside" id="fDh-nL-SQ9"/>
+                                </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="MmY-X2-zCh">
                                 <rect key="frame" x="20" y="469" width="374" height="216"/>
@@ -253,8 +277,17 @@
                             <constraint firstItem="Yzb-Gx-wfX" firstAttribute="leading" secondItem="Klb-2H-5p0" secondAttribute="leading" id="xRZ-4H-qF5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomRestraint" destination="CTY-iY-i8g" id="kY2-Yc-cMK"/>
+                        <outlet property="datePicker" destination="MmY-X2-zCh" id="9xQ-6k-gDM"/>
+                        <outlet property="navigationBar" destination="pYD-pw-gts" id="eLy-lK-Ru6"/>
+                        <outlet property="setDateButton" destination="1Ov-LS-Vhd" id="g1u-yJ-tfe"/>
+                        <outlet property="stackView" destination="PvA-YT-Acu" id="iXd-2K-AS3"/>
+                        <outlet property="textArea" destination="Yzb-Gx-wfX" id="7oe-lc-AuL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dKI-rg-u6Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="FVY-jb-6xJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2139.130434782609" y="-686.38392857142856"/>
         </scene>
