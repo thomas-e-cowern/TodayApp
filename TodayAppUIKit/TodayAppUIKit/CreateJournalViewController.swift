@@ -18,7 +18,6 @@ class CreateJournalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         navigationBar.barTintColor = UIColor(red: 0.298, green: 0.757, blue: 0.988, alpha: 1.0)
         navigationBar.tintColor = .white
         navigationBar.isTranslucent = false
