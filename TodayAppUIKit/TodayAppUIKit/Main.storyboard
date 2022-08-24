@@ -85,6 +85,9 @@
                                             <buttonConfiguration key="configuration" style="plain">
                                                 <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
                                             </buttonConfiguration>
+                                            <connections>
+                                                <action selector="plusTapped:" destination="kyD-23-ous" eventType="touchUpInside" id="U4j-qa-w7v"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcK-OT-y2K">
                                             <rect key="frame" x="207" y="0.0" width="207" height="100"/>
@@ -95,6 +98,9 @@
                                             <buttonConfiguration key="configuration" style="plain">
                                                 <imageReference key="image" image="camera" catalog="system" symbolScale="large"/>
                                             </buttonConfiguration>
+                                            <connections>
+                                                <action selector="cameraTapped:" destination="kyD-23-ous" eventType="touchUpInside" id="tKZ-S4-Rrr"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>
