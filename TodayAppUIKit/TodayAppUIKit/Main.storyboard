@@ -170,20 +170,28 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYD-pw-gts">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="foe-3g-8bs"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Title" id="x6l-Sf-sn9">
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="rFe-jb-l4v">
+                                            <color key="tintColor" red="0.1176470588" green="0.1058823466" blue="0.13333332540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <connections>
                                                 <action selector="cancelButtonTapped:" destination="bkb-DU-vgE" id="swl-hW-TdU"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="nyJ-CN-ugC">
+                                            <color key="tintColor" red="0.1176470588" green="0.1058823466" blue="0.13333332540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <connections>
                                                 <action selector="saveButtonTapped:" destination="bkb-DU-vgE" id="ayb-uS-Xdp"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
+                                <navigationBarAppearance key="standardAppearance">
+                                    <color key="backgroundColor" red="0.29803921570000003" green="0.75686274509999996" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </navigationBarAppearance>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Mx-PL-q1h">
                                 <rect key="frame" x="20" y="738" width="374" height="70"/>
