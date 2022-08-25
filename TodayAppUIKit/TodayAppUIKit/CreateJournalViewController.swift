@@ -87,4 +87,21 @@ class CreateJournalViewController: UIViewController, UIImagePickerControllerDele
         imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true, completion: nil)
     }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let chosenImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            images.append(chosenImage)
+           
+            let imageView = UIImageView()
+            
+            imageView.heightAnchor.constraint(equalToConstant: 70.0).isActive = true
+            imageView.widthAnchor.constraint(equalToConstant: 70.0).isActive = true
+            
+            imageView.image = chosenImage
+            stackView.addArrangedSubview(imageView)
+            imagePicker.dismiss(animated: true) {
+                // animation coming soon
+            }
+        }
+    }
 }
