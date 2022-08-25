@@ -196,11 +196,11 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Mx-PL-q1h">
                                 <rect key="frame" x="20" y="738" width="374" height="70"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PvA-YT-Acu">
-                                        <rect key="frame" x="0.0" y="20" width="150" height="31"/>
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" misplaced="YES" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PvA-YT-Acu">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="70"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RED-c9-hlp">
-                                                <rect key="frame" x="0.0" y="0.0" width="70" height="31"/>
+                                                <rect key="frame" x="0.0" y="19.5" width="70" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="1k5-aJ-pmN"/>
                                                 </constraints>
@@ -212,7 +212,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVy-6w-6iL">
-                                                <rect key="frame" x="80" y="0.0" width="70" height="31"/>
+                                                <rect key="frame" x="75" y="19.5" width="70" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="nYO-Fd-Dzv"/>
                                                 </constraints>
@@ -227,13 +227,12 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="PvA-YT-Acu" firstAttribute="bottom" secondItem="NSO-o2-gZV" secondAttribute="bottom" id="11W-T3-Ntn"/>
+                                    <constraint firstItem="PvA-YT-Acu" firstAttribute="top" secondItem="Co2-hJ-s54" secondAttribute="top" id="8X6-N2-aig"/>
+                                    <constraint firstItem="PvA-YT-Acu" firstAttribute="leading" secondItem="4Mx-PL-q1h" secondAttribute="leading" id="C6F-MT-11u"/>
                                     <constraint firstAttribute="height" constant="70" id="I29-vj-hg9"/>
-                                    <constraint firstItem="NSO-o2-gZV" firstAttribute="trailing" secondItem="PvA-YT-Acu" secondAttribute="trailing" constant="224" id="MYl-nE-bc3"/>
-                                    <constraint firstItem="PvA-YT-Acu" firstAttribute="leading" secondItem="NSO-o2-gZV" secondAttribute="leading" id="P47-rr-eIs"/>
-                                    <constraint firstItem="PvA-YT-Acu" firstAttribute="top" secondItem="NSO-o2-gZV" secondAttribute="top" constant="20" id="T5l-Ed-ZIg"/>
-                                    <constraint firstAttribute="bottom" secondItem="PvA-YT-Acu" secondAttribute="bottom" constant="19" id="V9H-mS-aWI"/>
-                                    <constraint firstItem="NSO-o2-gZV" firstAttribute="bottom" secondItem="PvA-YT-Acu" secondAttribute="bottom" constant="19" id="Wlu-cl-rbF"/>
-                                    <constraint firstAttribute="trailing" secondItem="PvA-YT-Acu" secondAttribute="trailing" constant="224" id="o4u-DO-qdO"/>
+                                    <constraint firstAttribute="bottom" secondItem="PvA-YT-Acu" secondAttribute="bottom" id="q6L-7g-Tfn"/>
+                                    <constraint firstAttribute="trailing" secondItem="PvA-YT-Acu" secondAttribute="trailing" constant="229" id="w5Q-QW-jmz"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Co2-hJ-s54"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="NSO-o2-gZV"/>
