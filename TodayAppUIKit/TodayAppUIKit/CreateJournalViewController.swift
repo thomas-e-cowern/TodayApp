@@ -16,6 +16,8 @@ class CreateJournalViewController: UIViewController {
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var setDateButton: UIButton!
     
+    var date = Date()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBar.barTintColor = UIColor(red: 0.298, green: 0.757, blue: 0.988, alpha: 1.0)
@@ -30,7 +32,13 @@ class CreateJournalViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationBar.topItem?.title = "This is a date"
+        updateDate()
+    }
+    
+    func updateDate() {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "E, MMM d, yyyy"
+        navigationBar.topItem?.title = formatter.string(from: date)
     }
     
     @objc func keyboardWillHide (notification: Notification) {
@@ -57,13 +65,18 @@ class CreateJournalViewController: UIViewController {
     }
     
     @IBAction func setDateTapped(_ sender: Any) {
-        
+        textArea.isHidden = false
+        datePicker.isHidden = true
+        setDateButton.isHidden = true
+        date = datePicker.date
+        updateDate()
     }
     
     @IBAction func calendarButtonTapped(_ sender: Any) {
         textArea.isHidden = true
         datePicker.isHidden = false
         setDateButton.isHidden = false
+        datePicker.date = date
     }
     
     @IBAction func cameraButtonTapped(_ sender: Any) {
