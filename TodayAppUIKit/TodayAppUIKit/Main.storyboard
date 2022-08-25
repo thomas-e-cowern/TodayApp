@@ -238,8 +238,11 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="NSO-o2-gZV"/>
                             </scrollView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yzb-Gx-wfX">
-                                <rect key="frame" x="0.0" y="56" width="414" height="636"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="299"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="299" id="BAW-et-oMd"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -265,13 +268,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MmY-X2-zCh" firstAttribute="leading" secondItem="Klb-2H-5p0" secondAttribute="leading" constant="20" id="4Cp-bT-Lib"/>
-                            <constraint firstItem="1Ov-LS-Vhd" firstAttribute="top" secondItem="Yzb-Gx-wfX" secondAttribute="bottom" constant="8" symbolic="YES" id="53s-pV-esZ"/>
                             <constraint firstItem="Klb-2H-5p0" firstAttribute="bottom" secondItem="4Mx-PL-q1h" secondAttribute="bottom" constant="34" id="CTY-iY-i8g"/>
                             <constraint firstItem="1Ov-LS-Vhd" firstAttribute="leading" secondItem="Klb-2H-5p0" secondAttribute="leading" constant="20" id="Da6-EC-NAj"/>
-                            <constraint firstItem="4Mx-PL-q1h" firstAttribute="top" secondItem="pYD-pw-gts" secondAttribute="bottom" constant="682" id="GQd-y6-1bC"/>
                             <constraint firstItem="Klb-2H-5p0" firstAttribute="trailing" secondItem="1Ov-LS-Vhd" secondAttribute="trailing" constant="20" id="Gn9-KS-pgw"/>
                             <constraint firstItem="pYD-pw-gts" firstAttribute="top" secondItem="aWo-Sb-6ah" secondAttribute="top" id="HX5-RQ-ALz"/>
                             <constraint firstItem="Klb-2H-5p0" firstAttribute="trailing" secondItem="4Mx-PL-q1h" secondAttribute="trailing" constant="20" id="T0D-qs-i9D"/>
+                            <constraint firstItem="4Mx-PL-q1h" firstAttribute="top" secondItem="MmY-X2-zCh" secondAttribute="bottom" constant="53" id="T85-n7-oZx"/>
                             <constraint firstItem="Yzb-Gx-wfX" firstAttribute="top" secondItem="pYD-pw-gts" secondAttribute="bottom" id="UTa-xY-2tz"/>
                             <constraint firstItem="Klb-2H-5p0" firstAttribute="trailing" secondItem="MmY-X2-zCh" secondAttribute="trailing" constant="20" id="VOJ-Ra-YEL"/>
                             <constraint firstItem="pYD-pw-gts" firstAttribute="trailing" secondItem="Klb-2H-5p0" secondAttribute="trailing" id="Xml-pq-P0y"/>
@@ -285,7 +287,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bottomRestraint" destination="CTY-iY-i8g" id="kY2-Yc-cMK"/>
+                        <outlet property="bottomConstraint" destination="CTY-iY-i8g" id="qTT-qc-Ca1"/>
                         <outlet property="datePicker" destination="MmY-X2-zCh" id="9xQ-6k-gDM"/>
                         <outlet property="navigationBar" destination="pYD-pw-gts" id="eLy-lK-Ru6"/>
                         <outlet property="setDateButton" destination="1Ov-LS-Vhd" id="g1u-yJ-tfe"/>

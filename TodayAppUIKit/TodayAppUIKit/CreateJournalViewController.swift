@@ -11,7 +11,7 @@ class CreateJournalViewController: UIViewController, UIImagePickerControllerDele
 
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var textArea: UITextView!
-    @IBOutlet weak var bottomRestraint: NSLayoutConstraint!
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var setDateButton: UIButton!
@@ -64,7 +64,8 @@ class CreateJournalViewController: UIViewController, UIImagePickerControllerDele
     func changeKeyboardHeight (notification: Notification) {
         if let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
             let keyboardHeight = keyboardFrame.cgRectValue.height
-            bottomRestraint.constant = keyboardHeight + 34
+            print(keyboardFrame.cgRectValue.height)
+            bottomConstraint.constant = keyboardHeight + 10
         }
     }
     
