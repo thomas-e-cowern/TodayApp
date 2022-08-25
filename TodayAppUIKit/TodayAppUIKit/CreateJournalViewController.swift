@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CreateJournalViewController: UIViewController {
+class CreateJournalViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var textArea: UITextView!
@@ -17,6 +17,8 @@ class CreateJournalViewController: UIViewController {
     @IBOutlet weak var setDateButton: UIButton!
     
     var date = Date()
+    var imagePicker = UIImagePickerController()
+    var images: [UIImage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,8 @@ class CreateJournalViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        imagePicker.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -80,6 +84,7 @@ class CreateJournalViewController: UIViewController {
     }
     
     @IBAction func cameraButtonTapped(_ sender: Any) {
-        
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
     }
 }
