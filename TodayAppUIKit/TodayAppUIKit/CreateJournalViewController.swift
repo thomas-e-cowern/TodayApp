@@ -22,6 +22,7 @@ class CreateJournalViewController: UIViewController {
         navigationBar.tintColor = .white
         navigationBar.isTranslucent = false
         navigationBar.titleTextAttributes = [.foregroundColor : UIColor.white]
+        navigationBar.backgroundColor = UIColor(red: 0.298, green: 0.757, blue: 0.988, alpha: 1.0)
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {
