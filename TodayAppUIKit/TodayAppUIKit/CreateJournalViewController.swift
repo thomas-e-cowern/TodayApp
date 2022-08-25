@@ -29,6 +29,10 @@ class CreateJournalViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationBar.topItem?.title = "This is a date"
+    }
+    
     @objc func keyboardWillHide (notification: Notification) {
         changeKeyboardHeight(notification: notification)
     }
@@ -57,7 +61,9 @@ class CreateJournalViewController: UIViewController {
     }
     
     @IBAction func calendarButtonTapped(_ sender: Any) {
-        
+        textArea.isHidden = true
+        datePicker.isHidden = false
+        setDateButton.isHidden = false
     }
     
     @IBAction func cameraButtonTapped(_ sender: Any) {
