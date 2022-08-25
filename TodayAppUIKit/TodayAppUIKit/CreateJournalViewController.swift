@@ -30,11 +30,18 @@ class CreateJournalViewController: UIViewController {
     }
     
     @objc func keyboardWillHide (notification: Notification) {
-        
+        changeKeyboardHeight(notification: notification)
     }
     
     @objc func keyboardWillShow (notification: Notification) {
-        
+        changeKeyboardHeight(notification: notification)
+    }
+    
+    func changeKeyboardHeight (notification: Notification) {
+        if let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+            let keyboardHeight = keyboardFrame.cgRectValue.height
+            bottomRestraint.constant = keyboardHeight + 34
+        }
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {
