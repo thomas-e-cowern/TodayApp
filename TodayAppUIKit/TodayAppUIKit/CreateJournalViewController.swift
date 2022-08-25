@@ -23,6 +23,18 @@ class CreateJournalViewController: UIViewController {
         navigationBar.isTranslucent = false
         navigationBar.titleTextAttributes = [.foregroundColor : UIColor.white]
         navigationBar.backgroundColor = UIColor(red: 0.298, green: 0.757, blue: 0.988, alpha: 1.0)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+    }
+    
+    @objc func keyboardWillHide (notification: Notification) {
+        
+    }
+    
+    @objc func keyboardWillShow (notification: Notification) {
+        
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {

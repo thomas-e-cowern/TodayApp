@@ -246,7 +246,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ov-LS-Vhd">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ov-LS-Vhd">
                                 <rect key="frame" x="20" y="700" width="374" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="epu-Jr-h3a"/>
@@ -258,7 +258,7 @@
                                     <action selector="setDateTapped:" destination="FVY-jb-6xJ" eventType="touchUpInside" id="fDh-nL-SQ9"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="MmY-X2-zCh">
+                            <datePicker hidden="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="MmY-X2-zCh">
                                 <rect key="frame" x="20" y="469" width="374" height="216"/>
                             </datePicker>
                         </subviews>
