@@ -8,12 +8,6 @@
 import UIKit
 import RealmSwift
 
-// Realm test
-class HotDog : Object {
-    @Persisted var name = ""
-    @Persisted var tastiness = 0
-}
-
 class CreateJournalViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var navigationBar: UINavigationBar!
@@ -30,21 +24,6 @@ class CreateJournalViewController: UIViewController, UIImagePickerControllerDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Realm Test
-        let dog = HotDog()
-        
-        dog.name = "New Yourker"
-        dog.tastiness = 8
-        
-        if let realm = try? Realm() {
-//            try? realm.write {
-//                realm.add(dog)
-//            }
-            let dawgs = realm.objects(HotDog.self)
-            print(dawgs)
-        }
-        
         
         navigationBar.barTintColor = UIColor(red: 0.298, green: 0.757, blue: 0.988, alpha: 1.0)
         navigationBar.tintColor = .white
