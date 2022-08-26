@@ -21,6 +21,19 @@
 		4DEEB28328B54571009E1DEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DEEB28228B54571009E1DEC /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4D17FFC728B9584C00B541B2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4D0CEAB628B3CD4800CE2C3C /* TodayAppUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayAppUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0CEAB928B3CD4800CE2C3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +67,7 @@
 			children = (
 				4D0CEAB828B3CD4800CE2C3C /* TodayAppUIKit */,
 				4D0CEAB728B3CD4800CE2C3C /* Products */,
+				4D17FFBF28B957D200B541B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +97,13 @@
 			path = TodayAppUIKit;
 			sourceTree = "<group>";
 		};
+		4D17FFBF28B957D200B541B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,6 +114,7 @@
 				4D0CEAB228B3CD4800CE2C3C /* Sources */,
 				4D0CEAB328B3CD4800CE2C3C /* Frameworks */,
 				4D0CEAB428B3CD4800CE2C3C /* Resources */,
+				4D17FFC728B9584C00B541B2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

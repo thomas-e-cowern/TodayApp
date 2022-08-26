@@ -1,0 +1,3 @@
+[submodule "TodayAppUIKit/Toucan"]
+	path = TodayAppUIKit/Toucan
+	url = https://github.com/gavinbunney/Toucan
