@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class JournalTableViewController: UITableViewController {
 
@@ -15,6 +16,14 @@ class JournalTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let realm = try? Realm() {
+            let entries = realm.objects(Entry.self)
+            print(entries.count)
+            print(entries[2].text)
+            print(entries[2].date)
+            print(entries[2].pictures.count)
+        }
 
     }
     
