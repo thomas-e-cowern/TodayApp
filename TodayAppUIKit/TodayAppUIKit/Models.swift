@@ -18,7 +18,7 @@ class Entry : Object {
 class Picture : Object {
     @Persisted var fullImageName = ""
     @Persisted var thumbnailName = ""
-    @Persisted var entry : Entry
+    @Persisted var entry : Entry?
     
     convenience init(image: UIImage) {
         self.init()
