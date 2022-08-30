@@ -7,6 +7,7 @@
 
 import UIKit
 import RealmSwift
+import Network
 
 class CreateJournalViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -21,6 +22,7 @@ class CreateJournalViewController: UIViewController, UIImagePickerControllerDele
     var imagePicker = UIImagePickerController()
     var images: [UIImage] = []
     var startWithCamera = false
+    var entry = Entry()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,20 +79,18 @@ class CreateJournalViewController: UIViewController, UIImagePickerControllerDele
     
     @IBAction func saveButtonTapped(_ sender: Any) {
         if let realm = try? Realm() {
-            let entry = Entry()
             entry.text = textArea.text
-            entry.date = date
-            print(entry.text)
-            print(entry.date)
-                for image in images {
-                    let picture = Picture(image: image)
-                    entry.pictures.append(picture)
-                    picture.entry = entry
-                }
-                try? realm.write {
-                    realm.add(entry)
-                }
-            dismiss(animated: true)
+            for image in images {
+                let picture = Picture(image: image)
+                entry.pictures.append(picture)
+                picture.entry = entry
+            }
+            
+            try? realm.write {
+                realm.add(entry)
+            }
+            
+            dismiss(animated: true, completion: nil)
         }
     }
     
