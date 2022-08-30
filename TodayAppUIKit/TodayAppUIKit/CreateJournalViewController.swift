@@ -80,10 +80,17 @@ class CreateJournalViewController: UIViewController, UIImagePickerControllerDele
             let entry = Entry()
             entry.text = textArea.text
             entry.date = date
-            for image in images {
-                let picture = Picture()
-                
-            }
+            print(entry.text)
+            print(entry.date)
+                for image in images {
+                    let picture = Picture(image: image)
+                    entry.pictures.append(picture)
+                    picture.entry = entry
+                }
+                try? realm.write {
+                    realm.add(entry)
+                }
+            dismiss(animated: true)
         }
     }
     
