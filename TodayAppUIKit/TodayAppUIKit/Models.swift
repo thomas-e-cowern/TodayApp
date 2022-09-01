@@ -37,7 +37,15 @@ class Picture : Object {
     }
     
     func imageWithFilename (filename: String) -> UIImage {
-        
+        if var path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+            path.appendPathComponent(filename)
+            if let imageData = try? Data(contentsOf: path) {
+                if let image = UIImage(data: imageData) {
+                    return image
+                }
+            }
+        }
+        return UIImage()
     }
     
     func imageToUrlString(image: UIImage) -> String {
