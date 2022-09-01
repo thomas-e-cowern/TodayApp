@@ -17,14 +17,13 @@ class JournalTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    func getEntries () {
         if let realm = try? Realm() {
-            let entries = realm.objects(Entry.self)
-            print(entries.count)
-            print(entries[6].text)
-            print(entries[6].date)
-            print(entries[6].pictures)
-        }
+            let entries = realm.objects(Entry.self).sorted(byKeyPath: "date", ascending: false)
 
+        }
     }
     
     @IBAction func cameraTapped(_ sender: Any) {
@@ -116,11 +115,11 @@ class JournalTableViewController: UITableViewController {
     
     class JournalCell : UITableViewCell {
         @IBOutlet weak var previewImageView: UIImageView!
-        @IBOutlet weak var previewTextLabel: UILabel!
+        @IBOutlet weak var previewTextLable: UILabel!
         @IBOutlet weak var monthLabel: UILabel!
         @IBOutlet weak var dateLable: UILabel!
         @IBOutlet weak var yearLabel: UILabel!
+        @IBOutlet weak var imageWidth: NSLayoutConstraint!
         
     }
-
 }
