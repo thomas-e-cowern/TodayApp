@@ -36,6 +36,10 @@ class Picture : Object {
         
     }
     
+    func imageWithFilename (filename: String) -> UIImage {
+        
+    }
+    
     func imageToUrlString(image: UIImage) -> String {
         if let imageData = image.pngData() {
             let fileName = UUID().uuidString + ".png"
