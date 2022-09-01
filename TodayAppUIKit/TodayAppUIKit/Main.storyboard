@@ -129,10 +129,46 @@
                                                 <constraint firstAttribute="width" secondItem="Xbn-GM-Mxb" secondAttribute="height" multiplier="1:1" constant="25" id="4I2-e6-0b2"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flW-yE-8uu">
+                                            <rect key="frame" x="354" y="0.0" width="60" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="ETQ-ZO-Xlf"/>
+                                                <constraint firstAttribute="width" constant="60" id="PM1-tR-yTK"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNu-kY-Ck1">
+                                            <rect key="frame" x="354" y="60" width="60" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="Hy6-BX-KIh"/>
+                                                <constraint firstAttribute="width" constant="60" id="Zm0-02-fp4"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEq-2t-ekT">
+                                            <rect key="frame" x="354" y="40" width="60" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="Tmc-jq-KfV"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Xbn-GM-Mxb" firstAttribute="top" secondItem="v7y-dV-umV" secondAttribute="top" id="1es-aC-Zg5"/>
+                                        <constraint firstAttribute="trailing" secondItem="QEq-2t-ekT" secondAttribute="trailing" id="39f-Pk-M0H"/>
+                                        <constraint firstItem="cNu-kY-Ck1" firstAttribute="top" secondItem="QEq-2t-ekT" secondAttribute="bottom" id="EiR-kv-SDZ"/>
+                                        <constraint firstItem="QEq-2t-ekT" firstAttribute="top" secondItem="flW-yE-8uu" secondAttribute="bottom" id="Loy-LT-8ew"/>
+                                        <constraint firstAttribute="trailing" secondItem="cNu-kY-Ck1" secondAttribute="trailing" id="PDW-z8-wbm"/>
                                         <constraint firstAttribute="bottom" secondItem="Xbn-GM-Mxb" secondAttribute="bottom" id="YxO-sm-5e7"/>
+                                        <constraint firstItem="flW-yE-8uu" firstAttribute="top" secondItem="v7y-dV-umV" secondAttribute="top" id="dLK-pl-JdZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="flW-yE-8uu" secondAttribute="trailing" id="fMz-aL-H43"/>
+                                        <constraint firstAttribute="bottom" secondItem="cNu-kY-Ck1" secondAttribute="bottom" id="uDO-HV-AgC"/>
                                         <constraint firstItem="Xbn-GM-Mxb" firstAttribute="leading" secondItem="v7y-dV-umV" secondAttribute="leading" id="zqL-Ur-u7P"/>
                                     </constraints>
                                 </tableViewCellContentView>
