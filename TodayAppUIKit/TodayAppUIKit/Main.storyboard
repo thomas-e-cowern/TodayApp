@@ -183,12 +183,12 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="dateLable" destination="QEq-2t-ekT" id="kc8-Ey-KD4"/>
-                                    <outlet property="imageWidth" destination="d5y-VT-0vY" id="gGw-pO-2xv"/>
-                                    <outlet property="monthLabel" destination="flW-yE-8uu" id="HSB-iK-ETI"/>
-                                    <outlet property="previewImageView" destination="Xbn-GM-Mxb" id="rSu-cx-Ryw"/>
-                                    <outlet property="previewTextLable" destination="936-RE-GK9" id="c2g-CS-gBO"/>
-                                    <outlet property="yearLabel" destination="cNu-kY-Ck1" id="z6s-ae-R4Q"/>
+                                    <outlet property="dayLabel" destination="QEq-2t-ekT" id="4rG-eL-Rvs"/>
+                                    <outlet property="monthLabel" destination="flW-yE-8uu" id="rvc-kH-Baf"/>
+                                    <outlet property="previewImageView" destination="Xbn-GM-Mxb" id="tCZ-7k-Jjp"/>
+                                    <outlet property="previewImageWidth" destination="d5y-VT-0vY" id="zYI-KB-ehc"/>
+                                    <outlet property="previewTextView" destination="936-RE-GK9" id="Tvy-Zb-1yf"/>
+                                    <outlet property="yearLabel" destination="cNu-kY-Ck1" id="4hr-C2-WXG"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

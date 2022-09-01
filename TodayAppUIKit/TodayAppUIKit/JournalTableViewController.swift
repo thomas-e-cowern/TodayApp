@@ -68,7 +68,17 @@ class JournalTableViewController: UITableViewController {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "journalCell", for: indexPath) as? JournalCell {
             
             if let entry = entries?[indexPath.row] {
-                cell.previewTextLable.text = entry.text
+                cell.previewTextView.text = entry.text
+                cell.dayLabel.text = ""
+                if let image = entry.pictures.first?.thumbNail() {
+                    cell.previewImageWidth.constant = 100
+                    cell.previewImageView.image = image
+                } else {
+                    cell.previewImageWidth.constant = 0
+                }
+                cell.monthLabel.text = "June"
+                cell.dayLabel.text = "32"
+                cell.yearLabel.text = "2023"
             }
             
             return cell
@@ -122,13 +132,12 @@ class JournalTableViewController: UITableViewController {
     }
     */
     
-    class JournalCell : UITableViewCell {
-        @IBOutlet weak var previewImageView: UIImageView!
-        @IBOutlet weak var previewTextLable: UILabel!
-        @IBOutlet weak var monthLabel: UILabel!
-        @IBOutlet weak var dateLable: UILabel!
-        @IBOutlet weak var yearLabel: UILabel!
-        @IBOutlet weak var imageWidth: NSLayoutConstraint!
-        
-    }
+//    class JournalCell : UITableViewCell {
+//        @IBOutlet weak var imageWidth: NSLayoutConstraint!
+//        @IBOutlet weak var previewImageView: UIImageView!
+//        @IBOutlet weak var previewTextLabel: UILabel!
+//        @IBOutlet weak var monthLabel: UILabel!
+//        @IBOutlet weak var dayLabel: UILabel!
+//        @IBOutlet weak var yearLabel: UILabel!
+//    }
 }
