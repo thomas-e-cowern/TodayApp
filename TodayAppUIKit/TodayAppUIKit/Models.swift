@@ -26,21 +26,18 @@ class Picture : Object {
         let targetSize = CGSize(width: 500, height: 500)
         let scaledImageSize = image.scalePreservingAspectRatio(targetSize: targetSize)
         thumbnailName = imageToUrlString(image: scaledImageSize)
-        print(thumbnailName)
     }
     
     func imageToUrlString(image: UIImage) -> String {
         if let imageData = image.pngData() {
-            print("Inside image to url string")
             let fileName = UUID().uuidString + ".png"
             if var path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
                 path.appendPathComponent(fileName)
                 try? imageData.write(to: path)
-                print(fileName)
                 return fileName
             }
         }
-        print("Somwthing is wrong")
+        print("Something is wrong")
         return ""
     }
 }
