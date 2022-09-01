@@ -28,6 +28,14 @@ class Picture : Object {
         thumbnailName = imageToUrlString(image: scaledImageSize)
     }
     
+    func fullImage () -> UIImage {
+        
+    }
+    
+    func thumbNail () -> UIImage {
+        
+    }
+    
     func imageToUrlString(image: UIImage) -> String {
         if let imageData = image.pngData() {
             let fileName = UUID().uuidString + ".png"
