@@ -113,5 +113,14 @@ class JournalTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    class JournalCell : UITableViewCell {
+        @IBOutlet weak var previewImageView: UIImageView!
+        @IBOutlet weak var previewTextLabel: UILabel!
+        @IBOutlet weak var monthLabel: UILabel!
+        @IBOutlet weak var dateLable: UILabel!
+        @IBOutlet weak var yearLabel: UILabel!
+        
+    }
 
 }

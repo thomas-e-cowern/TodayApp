@@ -116,7 +116,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="SfY-ot-qat">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="SfY-ot-qat" customClass="JournalCell">
                                 <rect key="frame" x="0.0" y="244.5" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SfY-ot-qat" id="v7y-dV-umV">
@@ -158,20 +158,37 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blah, blah, blah, Blah, blah, blah, Blah, blah, blah" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="936-RE-GK9">
+                                            <rect key="frame" x="130" y="11" width="219" height="78"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Xbn-GM-Mxb" firstAttribute="top" secondItem="v7y-dV-umV" secondAttribute="top" id="1es-aC-Zg5"/>
                                         <constraint firstAttribute="trailing" secondItem="QEq-2t-ekT" secondAttribute="trailing" id="39f-Pk-M0H"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="936-RE-GK9" secondAttribute="bottom" id="7n4-2J-rW1"/>
+                                        <constraint firstItem="QEq-2t-ekT" firstAttribute="leading" secondItem="936-RE-GK9" secondAttribute="trailing" constant="5" id="DSW-R4-oaL"/>
                                         <constraint firstItem="cNu-kY-Ck1" firstAttribute="top" secondItem="QEq-2t-ekT" secondAttribute="bottom" id="EiR-kv-SDZ"/>
                                         <constraint firstItem="QEq-2t-ekT" firstAttribute="top" secondItem="flW-yE-8uu" secondAttribute="bottom" id="Loy-LT-8ew"/>
+                                        <constraint firstItem="936-RE-GK9" firstAttribute="leading" secondItem="Xbn-GM-Mxb" secondAttribute="trailing" constant="5" id="NEo-43-fw4"/>
                                         <constraint firstAttribute="trailing" secondItem="cNu-kY-Ck1" secondAttribute="trailing" id="PDW-z8-wbm"/>
                                         <constraint firstAttribute="bottom" secondItem="Xbn-GM-Mxb" secondAttribute="bottom" id="YxO-sm-5e7"/>
                                         <constraint firstItem="flW-yE-8uu" firstAttribute="top" secondItem="v7y-dV-umV" secondAttribute="top" id="dLK-pl-JdZ"/>
                                         <constraint firstAttribute="trailing" secondItem="flW-yE-8uu" secondAttribute="trailing" id="fMz-aL-H43"/>
                                         <constraint firstAttribute="bottom" secondItem="cNu-kY-Ck1" secondAttribute="bottom" id="uDO-HV-AgC"/>
+                                        <constraint firstItem="936-RE-GK9" firstAttribute="top" secondItem="v7y-dV-umV" secondAttribute="topMargin" id="vm3-QX-b4p"/>
                                         <constraint firstItem="Xbn-GM-Mxb" firstAttribute="leading" secondItem="v7y-dV-umV" secondAttribute="leading" id="zqL-Ur-u7P"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateLable" destination="QEq-2t-ekT" id="kc8-Ey-KD4"/>
+                                    <outlet property="imageView" destination="Xbn-GM-Mxb" id="W8d-d0-xiI"/>
+                                    <outlet property="monthLabel" destination="flW-yE-8uu" id="HSB-iK-ETI"/>
+                                    <outlet property="textLabel" destination="936-RE-GK9" id="rcp-Cs-0fU"/>
+                                    <outlet property="yearLabel" destination="cNu-kY-Ck1" id="z6s-ae-R4Q"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
