@@ -65,20 +65,19 @@ class JournalTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "journalCell", for: indexPath) as? JournalCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "jCell", for: indexPath) as? JournalCell {
             
             if let entry = entries?[indexPath.row] {
                 cell.previewTextView.text = entry.text
-                cell.dayLabel.text = ""
                 if let image = entry.pictures.first?.thumbNail() {
                     cell.previewImageWidth.constant = 100
                     cell.previewImageView.image = image
                 } else {
                     cell.previewImageWidth.constant = 0
                 }
-                cell.monthLabel.text = "June"
-                cell.dayLabel.text = "32"
-                cell.yearLabel.text = "2023"
+//                cell.monthLabel.text = "June"
+////                cell.dayLabel.text = "32"
+//                cell.yearLabel.text = "2023"
             }
             
             return cell

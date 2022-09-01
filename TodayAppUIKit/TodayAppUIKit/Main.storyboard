@@ -116,7 +116,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="journalCell" rowHeight="100" id="SfY-ot-qat" customClass="JournalCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="jCell" rowHeight="100" id="SfY-ot-qat" customClass="JournalCell">
                                 <rect key="frame" x="0.0" y="244.5" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SfY-ot-qat" id="v7y-dV-umV">
@@ -183,12 +183,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="dayLabel" destination="QEq-2t-ekT" id="4rG-eL-Rvs"/>
-                                    <outlet property="monthLabel" destination="flW-yE-8uu" id="rvc-kH-Baf"/>
                                     <outlet property="previewImageView" destination="Xbn-GM-Mxb" id="tCZ-7k-Jjp"/>
                                     <outlet property="previewImageWidth" destination="d5y-VT-0vY" id="zYI-KB-ehc"/>
                                     <outlet property="previewTextView" destination="936-RE-GK9" id="Tvy-Zb-1yf"/>
-                                    <outlet property="yearLabel" destination="cNu-kY-Ck1" id="4hr-C2-WXG"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
