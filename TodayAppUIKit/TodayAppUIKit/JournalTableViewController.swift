@@ -13,6 +13,7 @@ class JournalTableViewController: UITableViewController {
     @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var plusButton: UIButton!
 
+    var entries : Results<Entry>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +22,14 @@ class JournalTableViewController: UITableViewController {
     
     func getEntries () {
         if let realm = try? Realm() {
-            let entries = realm.objects(Entry.self).sorted(byKeyPath: "date", ascending: false)
+            entries = realm.objects(Entry.self).sorted(byKeyPath: "date", ascending: false)
+            tableView.reloadData()
 
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        getEntries()
     }
     
     @IBAction func cameraTapped(_ sender: Any) {
