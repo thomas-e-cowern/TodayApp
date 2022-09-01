@@ -85,7 +85,7 @@ class CreateJournalViewController: UIViewController, UIImagePickerControllerDele
                 entry.pictures.append(picture)
                 picture.entry = entry
             }
-            
+            print(entry.pictures.count)
             try? realm.write {
                 realm.add(entry)
             }
