@@ -29,11 +29,11 @@ class Picture : Object {
     }
     
     func fullImage () -> UIImage {
-        
+        return imageWithFilename(filename: fullImageName)
     }
     
     func thumbNail () -> UIImage {
-        
+        return imageWithFilename(filename: thumbnailName)
     }
     
     func imageWithFilename (filename: String) -> UIImage {
